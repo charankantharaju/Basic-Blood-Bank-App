@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Bank Application</title>
+    <link rel="stylesheet" href="bloodbank.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Blood Bank</h1>
+    <div id="donor-form-container">
+      <h2>Register as a Donor</h2>
+      <form id="donorForm">
+        <label>Name: <input type="text" name="name" required /></label><br />
+        <label
+          >Blood Group:
+          <select name="bloodGroup" required>
+            <option value="">Select</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select> </label
+        ><br />
+        <label>Contact: <input type="text" name="contact" required /></label
+        ><br />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <hr />
+    <div id="search-container">
+      <h2>Search Donors</h2>
+      <input type="text" id="searchInput" placeholder="Enter blood group" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <hr />
+    <div id="donor-list-container">
+      <h2>Donor List</h2>
+      <ul id="donorList"></ul>
+    </div>
+    <script src="bloodbank.js"></script>
+  </body>
+</html>
